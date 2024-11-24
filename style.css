@@ -6,7 +6,6 @@
 }
 html{
 	scroll-behavior: smooth;
-	
 	/*   *** Storing Colors In Variables ***   */
 	--bg-clr-one: #f6f9fe;
 	--bg-clr-two: #f4f7fc;
