@@ -20,7 +20,8 @@ html{
 
 /*   *** Reusable Code Starts ***   */
 
-button.btn{
+button.btn
+{
 	background-color: var(--primary-clr);
 	color: var(--bg-clr-one);
 	border: 1px solid transparent;
@@ -32,7 +33,8 @@ button.btn{
 	transition: 0.4s;
 }
 
-button.btn:hover{
+button.btn:hover
+{
 	background-color: var(--bg-clr-one);
 	color: var(--primary-clr);
 	border: 1px solid var(--primary-clr);
