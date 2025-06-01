@@ -18,6 +18,7 @@ anchorLinks.forEach(function(anchor) {
 });
 
 // Script File
+
 // Home Section Starts
 var menuBtn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.nav-links');
