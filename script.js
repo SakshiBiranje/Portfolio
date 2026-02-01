@@ -1,22 +1,3 @@
-// Get all anchor links in the navbar
-var anchorLinks = document.querySelectorAll('.nav-links a');
-
-// Loop through each anchor link
-anchorLinks.forEach(function(anchor) {
-    // Add click event listener for each anchor link
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();  // Prevent default link behavior
-
-        var targetSection = document.querySelector(this.getAttribute('href')); // Get the target section
-        
-        // Scroll to the target section with smooth behavior
-        window.scrollTo({
-            top: targetSection.offsetTop - 60,  // Adjust scroll position (offset for fixed header, if needed)
-            behavior: 'smooth'  // Enable smooth scrolling
-        });
-    });
-});
-
 // Script File
 
 // Home Section Starts
@@ -53,12 +34,11 @@ function scrollFunction(){
 	}
 }
 // Home Section Ends 
-
-// Portfolio Section Starts
+// Projects Section Starts
 var $galleryContainer = $('.gallery').isotope({
 	itemSelector: '.item',
 	layoutMode: 'fitRows'
-})
+});
 
 $('.button-group .button').on('click', function(){
 	$('.button-group .button').removeClass('active');
@@ -67,18 +47,9 @@ $('.button-group .button').on('click', function(){
 	var value = $(this).attr('data-filter');
 	$galleryContainer.isotope({
 		filter: value
-	})
-})
-
-// magnific popup
-$('.gallery').magnificPopup({
-	delegate: '.overlay a',
-	type: 'image',
-	gallery:{
-		enabled: true
-	}
-})
-// Portfolio Section Ends
+	});
+});
+// Projects Section Ends
 
 // Testimonials Section Starts
 $('.testimonials-container').owlCarousel({
@@ -102,6 +73,4 @@ $('.testimonials-container').owlCarousel({
             items:2
         }
     }
-	
 })
-
